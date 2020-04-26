@@ -1,0 +1,386 @@
+body{
+	font-family: CirceRegular;
+	font-size: 16px;
+	color:#333333;
+	min-width:350px;
+}
+header{
+	background-image: url(../img/hbg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height:150px;
+}
+.head{
+	max-width: 1166px;
+	margin:0 auto;
+	padding: 44px 17px;
+}
+.head ul{
+	display: inline-block;
+}
+.head li{
+	display: inline-block;
+	margin-left:40px;
+}
+.head li a{
+	color:#fff;
+}
+.head li a:hover{
+	text-decoration: underline;
+}
+.head *{
+	display: inline-block;
+	vertical-align: middle;
+}
+.head .logo{
+	margin: 0;
+}
+.head .logonadp {
+	padding-left: 8px;
+	width:200px;
+	color:#fff;
+	font-family: RobotoRegular;
+	font-size: 26px;
+	text-transform: uppercase;
+}
+.head .logonadp .bold{
+	font-family: RobotoBold;
+	padding-bottom: 5px;
+}
+.head a.adv{
+	float:right;
+	background-color: #ffd700;
+	width: 237px;
+	height: 18px;
+	padding: 19px 0;
+	text-align: center;
+	font-family: CirceBold;
+	font-size: 17.3px;
+	text-transform: uppercase;
+	border-radius: 4px;
+}
+nav{
+	margin: 0 auto;
+	margin-top: -14px;
+	max-width: 1000px;
+	padding: 0 100px;
+}
+nav>ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+nav>ul>li>a>.round{
+	border-radius:50%;
+	width:60px;
+	height:60px;
+	background-color: #ffd700;
+	border: 2px solid #fff;
+	margin:0 auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+nav>ul>li>a>.nadp{
+	padding:20px 0 13px 0;
+}
+nav>ul>li>a{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+nav>ul>li:nth-child(1)>a>div.round{
+	background-image: url(../img/ic_folder.png);
+}
+nav>ul>li:nth-child(2)>a>div.round{
+	background-image: url(../img/ic_cap.png);
+}
+nav>ul>li:nth-child(3)>a>div.round{
+	background-image: url(../img/ic_heart.png);
+}
+nav>ul>li:nth-child(4)>a>div.round{
+	background-image: url(../img/ic_compass.png);
+}
+nav>ul>li:nth-child(5)>a>div.round{
+	background-image: url(../img/ic_lupa.png);
+}
+nav>ul>li:hover>a>div.nadp{
+	color:#3faae8;
+}
+nav li ul{
+	display: none;
+	padding: 20px;
+	position: absolute;
+	width:525px;
+	columns: 2;
+	column-rule-style: solid;
+	column-rule-width: 1px;
+	column-rule-color: #d5d5d5;
+	column-gap: 100px;
+	background-color: #fff;
+	border-top: 1px solid #3897ce;
+	color:#333333;
+	box-shadow: 0 0 3px grey;
+	z-index: 1;
+}
+nav li ul li{
+	font-family: CirceLight;
+	font-size: 18px;
+	padding: 10px;
+	text-align: center;
+}
+nav>ul>li{
+	position: relative;
+}
+nav>ul>li:hover:nth-child(2) ul{
+	left:-120px;
+}
+nav>ul>li:hover:nth-child(3) ul{
+	left:-235px;
+}
+nav>ul>li:hover:nth-child(4) ul{
+	right:-120px;
+}
+nav>ul>li:hover:nth-child(5) ul{
+	right:0px;
+}
+nav li ul a:hover{
+	color:#3faae8;
+}
+main{
+	margin: 0 auto;
+	max-width: 1166px;
+	padding: 15px 17px 65px 17px;
+}
+img.banner{
+	width: 100%;
+}
+main h2{
+	font-size: 30px;
+	margin: 30px 0 25px 0;
+}
+.lastev{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+	margin-bottom: 40px;
+	width: 100%;
+}
+.event{
+	margin: 0 auto;
+	border: 1px solid #e0e0e0;
+	width:100%;
+	max-width:550px;
+}
+.event .imgevent, .event img{
+	width:100%;
+}
+.event .nameevent{
+	font-size: 22px;
+	margin:30px 30px 0px 30px;
+}
+.event .descevent{
+	font-size: 14px;
+	margin: 25px 30px 18px 30px;
+	
+}
+.event .rubevent{
+	font-size: 14px;
+	padding-top: 18px;
+	margin: 0px 30px 30px 30px;
+	width:195px;
+	border-top:1px solid #2c64b7;
+	color: #8e8d8d;
+}
+.fresh{
+	display: grid;
+	grid-template-columns: 435fr 435fr 330fr;
+	grid-column-gap: 1px;
+	margin: 0;
+	width: 100%;
+}
+.fritem{
+	width:100%;
+	max-width:550px;
+	background-color: #f9f9f9;
+	margin: 0 auto;
+}
+.fritem .pik{
+	float:left;
+	margin-right: 30px; 
+	position: relative;
+	width: 72px;
+	height: 68px;
+	background-color: #2c64b7;
+}
+.fritem .pik img{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+.fresh h3{
+	font-family: CirceExtraBold;
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 26px 0 22px 0;
+}
+.fritem ul{
+	padding: 20px 0;
+}
+.fritem li{
+	font-family: CirceLight;
+	font-size: 16px;
+	padding: 15px 70px 15px 30px;
+	list-style-image: url(../img/bcir.png);
+	list-style-position: inside;
+	
+}
+.fritem a{
+	display: inline-block;
+	padding-left: 5px;
+	vertical-align: top;
+}
+.fritem li:hover{
+	background-color: #fff;
+	list-style-image: url(../img/ecir.png);	
+}
+.pro{
+	color:#fff;
+	background-image: url(../img/bg_pro.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: calc(100% - 80px);
+	max-width:360px;
+	padding: 30px 40px 85px 40px;
+	margin: 0 auto;
+}
+.pro h3{
+	width:180px;
+	margin:0;
+	padding: 0;
+}
+.pro p{
+	margin: 20px 0 50px 0;
+	line-height: 1.4em;
+	height:155px;
+	overflow: hidden;
+}
+.pro a, .asid input[type="submit"]{
+	font-family: CirceBold;
+	font-size: 14px;
+	color:#fff;
+	background-color: #3faae8;
+	border-radius: 3px;
+	border: 1px solid #60c5ff;
+	box-shadow: 0 2px 0 #1970a2;
+	padding: 14px 25px 10px 25px;
+	width:180px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.asid{ 
+	width: 100%;
+}
+.asid{
+	grid-column-start: 3;
+	grid-row-start:1;
+	grid-row-end:4; 
+	}	
+.asid form{
+	max-width: 270px;
+	border: 1px solid #e0e0e0;
+}
+.asid>img, .asid>a{
+	display: block;
+	margin-top: 30px;
+}
+.asid>*{
+	margin: 0 auto;
+}
+.asid>a{
+	text-align:center;
+}
+.asid h4{
+	font-family: CirceBold;
+	font-size: 17.2px;
+	text-transform: uppercase;
+	padding: 30px 40px 0px 30px;
+}
+.asid form img{
+	width:100%;
+	margin-top: 30px; 
+}
+.asid form .sub{
+	margin: 0 auto;
+	text-align: center;
+}
+.asid .check{
+	display: grid;
+	grid-template-columns: 20px 1fr;
+	grid-column-gap: 10px;
+	margin:30px 5px 20px 30px;
+	width: calc(100% - 30px);
+}
+.asid .check input{
+	align-self: start;
+}
+.asid form label{
+	font-family: CirceLight;
+	font-size: 14px;
+	padding: 1px 5px 5px 0px;
+	line-height: 1.4em;
+}
+.asid form label:hover, .asid form input:hover{
+	cursor: pointer;
+}
+footer{
+	background-color: #f9f9f9;
+}
+.foot{
+	position: relative;
+	max-width: 1166px;
+	margin: 0 auto;
+	padding: 0px 17px;
+	min-height:114px;
+	font-family: CirceLight;
+	font-size: 14px;
+}
+.foot *{
+	display: inline-block;
+	vertical-align: top;
+}
+.foot .logo{
+	position: relative;
+	margin: 35px 0; 
+}
+.foot .logonadp{
+	padding-left: 8px;
+	width:140px;
+	color:#212121;
+	font-family: RobotoRegular;
+	font-size: 17.7px;
+	text-transform: uppercase;
+}
+.foot .logonadp .bold{
+	font-family: RobotoBold;
+	padding-bottom: 3px;
+}
+.foot ul{
+	margin-left:50px;
+	margin-top: 35px;
+}
+.foot li{
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 15px;
+}
+.foot .sozd{
+  position: absolute;
+  top:0;
+  right:20px; 
+	font-size: 14px;
+	padding: 25px 0;
+}
+.foot .copy{
+	margin-top: 35px;
+	padding: 15px;
+}

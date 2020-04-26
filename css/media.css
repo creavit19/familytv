@@ -1,0 +1,199 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.asid{
+	grid-column-start: 3;
+	grid-row-start:1;
+	grid-row-end:4; 
+	}
+.foot .copy{
+	position: absolute;
+  top:55px;
+  left:40px; 
+  padding: 0;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.head li{
+	display: block;
+	margin-bottom:5px;
+	}
+	.asid{
+	grid-column-start: 2;
+	grid-row-start:1;
+	grid-row-end: 7; 
+	}
+	.foot ul{
+		margin-left: 10px; 
+	}
+	.event:last-child{
+		display: none;
+	}
+	.lastev{
+	grid-template-columns: 1fr 1fr;
+	}
+	.fresh{
+	grid-template-columns: 435fr 330fr;
+	}
+	.foot{
+		min-height: 180px;
+	}
+	.foot .sozd{
+  position: absolute;
+  top:100px;
+  left:40px; 
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.head .logonadp{
+		display: none;
+	}
+	.head li{
+	margin-left:20px;
+}
+	nav{
+		margin-top: 10px;
+		max-width: 400px;
+		padding: 0 50px;
+	}
+	nav>ul>li:hover ul{
+	display: none;
+	}
+	nav>ul{
+	display: block;
+	}
+	nav>ul>li>a{
+		position: relative;
+		color:white;
+	}
+nav>ul>li>a>.round{
+	position: absolute;
+	top:-5px;
+	width:40px;
+	height:40px;
+	margin:0;
+	background-size: 50%;
+	}
+nav>ul>li>a>.nadp{
+	padding:10px 20px 10px 60px;
+	background-color: #3faae8;
+	width: calc(100% - 100px);
+	margin: 0 0 0 20px;
+	border-radius: 20px;
+	font-family: CirceExtraBold;
+ }
+nav>ul>li{
+	padding: 10px 0;
+}
+nav>ul>li>a{
+	display: block;
+ }
+ nav>ul>li>a *{
+	display: inline-block;
+	vertical-align: middle;
+ }
+ nav>ul>li:hover>a>div.nadp{
+	color:#f1ea9e;
+}
+	.banner{
+		display: none;
+	}
+	.lastev{
+	grid-template-columns: 1fr;
+	}
+	.fresh{
+	grid-template-columns: 1fr;
+	}
+	.asid{
+		grid-column-start: 1;
+		grid-row-start:7;
+		margin-top: 40px; 
+	}
+	.foot{
+		min-height: 230px;
+	}
+	.foot li{
+	display: block;
+	}
+	.foot ul{
+		margin-left: 70px; 
+	}
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.head a.adv{
+	width: 130px;
+	height: 9px;
+	padding: 10px 0;
+	font-size: 10px;
+	border-radius: 2px;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+nav>ul>li:hover>a>div.round{
+	background-image: url(../img/ic_dot.png);
+	background-color: #3faae8;
+}
+nav>ul>li:hover ul{
+	display: block;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
